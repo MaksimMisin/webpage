@@ -63,9 +63,68 @@ h1 {
     letter-spacing: 0.05em;
 }
 
+/* Pitch headline — longer than a name, so it needs a smaller size */
+h1.pitch {
+    font-size: 2.5rem;
+    letter-spacing: -0.02em;
+}
+
 /* Bio */
 .bio {
     margin-bottom: 2.5rem;
+}
+
+.section-label {
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--black);
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+/* Call to action */
+.cta {
+    margin-bottom: 2.5rem;
+    border: 4px solid var(--black);
+    padding: 1.5rem;
+}
+
+.cta h2 {
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.cta p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    max-width: 60ch;
+}
+
+.cta-link {
+    display: inline-block;
+    color: var(--black);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.125rem;
+    border-bottom: 2px solid var(--black);
+    padding-bottom: 0.25rem;
+    transition: border-color 0.2s ease;
+}
+
+.cta-link:hover {
+    border-color: var(--gray);
+}
+
+.price {
+    font-weight: 700;
+    font-size: 1rem;
+    margin-top: 1.5rem;
 }
 
 .bio p {
@@ -88,7 +147,7 @@ h1 {
     font-weight: 700;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1rem;
     border-bottom: 2px solid var(--black);
     padding-bottom: 0.75rem;
     display: inline-block;
@@ -241,8 +300,17 @@ footer {
         font-size: 2.5rem;
     }
 
+    h1.pitch {
+        font-size: 1.75rem;
+    }
+
+    .cta {
+        padding: 1.25rem;
+    }
+
     header,
     .bio,
+    .cta,
     .services,
     .clients {
         margin-bottom: 2rem;
@@ -275,6 +343,10 @@ footer {
 @media (max-width: 400px) {
     h1 {
         font-size: 2rem;
+    }
+
+    h1.pitch {
+        font-size: 1.5rem;
     }
 
     .title {
