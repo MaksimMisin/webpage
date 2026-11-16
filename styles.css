@@ -49,14 +49,6 @@ h1 {
     margin-bottom: 1rem;
 }
 
-.title {
-    font-size: 1.25rem;
-    font-weight: 400;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    margin-bottom: 0.5rem;
-}
-
 .company {
     font-size: 0.875rem;
     color: var(--gray);
@@ -221,12 +213,6 @@ footer {
     border-color: var(--gray);
 }
 
-.legal {
-    font-size: 0.75rem;
-    color: var(--gray);
-    letter-spacing: 0.05em;
-}
-
 /* Responsive */
 @media (max-width: 600px) {
     html {
@@ -275,10 +261,6 @@ footer {
 @media (max-width: 400px) {
     h1 {
         font-size: 2rem;
-    }
-
-    .title {
-        font-size: 1rem;
     }
 }
 
